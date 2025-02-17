@@ -55,6 +55,7 @@
     <Compile Include="LogArgs.cs" />
     <Compile Include="LogErrorArgs.cs" />
     <Compile Include="LogProcessArgs.cs" />
+    <Compile Include="LogService.cs" />
     <Compile Include="LogUIOperationArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
