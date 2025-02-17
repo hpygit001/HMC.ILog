@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+   <icon>image/log.png</icon>
+    <projectUrl>https://github.com/hpygit001/HMC.ILog.git/</projectUrl>
+    <description>$description$</description>
+    <releaseNotes>初次版本</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>运动控制 日志</tags>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\$id$.pdb" target="lib\net461\" />
+   <file src="img\log.png" target="image/log.png" />
+</files>
+</package>
