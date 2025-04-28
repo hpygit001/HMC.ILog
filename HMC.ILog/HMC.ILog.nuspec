@@ -8,7 +8,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <!-- <icon>icon.png</icon> -->
-   <icon>image/log.png</icon>
+   <icon>image/logo.png</icon>
     <projectUrl>https://github.com/hpygit001/HMC.ILog.git/</projectUrl>
     <description>$description$</description>
     <releaseNotes>初次版本</releaseNotes>
@@ -17,6 +17,6 @@
   </metadata>
   <files>
     <file src="bin\$configuration$\$id$.pdb" target="lib\net461\" />
-   <file src="img\log.png" target="image/log.png" />
+   <file src="img\logo.png" target="image/logo.png" />
 </files>
 </package>

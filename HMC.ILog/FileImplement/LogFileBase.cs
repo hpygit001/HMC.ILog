@@ -62,17 +62,7 @@ namespace HMC.ILog.FileImplement
                     }
 
                 }
-                if (!System.IO.File.Exists(filePath))
-                {
-                    lock (ob_lock)
-                    {
-                        if (!System.IO.File.Exists(filePath))
-                        {
-                            using (System.IO.File.Create(filePath)) { }
-                        }
-                    }
-                }
-
+              
 
 
                 return true;
@@ -91,21 +81,30 @@ namespace HMC.ILog.FileImplement
 
             if (IsLimitAllWriteLog) return;
             if (IsWriteLog == false) return;
-            if (!CheckFileExist(filePath)) return;
+            //if (!) return;
             lock (ob_lock)
             {
                 try
                 {
 
                     System.IO.File.AppendAllText(filePath, msg + "\r\n");
+                    return;
                 }
                 catch (Exception ex)
                 {
-
+                    CheckFileExist(filePath);
 
                 }
+                try
+                {
 
-
+                }
+                catch (Exception ex)
+                {
+                    System.IO.File.AppendAllText(filePath, msg + "\r\n");
+                   
+                }
+              
             }
         }
 
